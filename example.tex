@@ -1,0 +1,303 @@
+%% example.tex --- example thesis
+
+% The MIT License (MIT)
+% Copyright © 2021 Göktuğ Kayaalp <self at gkayaalp dot com>
+
+% Permission is hereby granted, free of charge, to any person obtaining
+% a copy of this software and associated documentation files (the
+% “Software”), to deal in the Software without restriction, including
+% without limitation the rights to use, copy, modify, merge, publish,
+% distribute, sublicense, and/or sell copies of the Software, and to
+% permit persons to whom the Software is furnished to do so, subject to
+% the following conditions:
+
+% The above copyright notice and this permission notice shall be
+% included in all copies or substantial portions of the Software.
+
+% THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+% EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+% NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+% LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+% OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+% WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+\documentclass{hacett-socsci-thesis}
+
+\usepackage[style=apa,backend=biber,doi=false,isbn=false,url=false]{biblatex}
+\usepackage[english]{babel}
+\usepackage{filecontents}
+
+\title{My really interesting and incredibly wonderful thesis}
+\HSTauthor{İsmail Göktuğ}{Kayaalp}
+\date{2021}
+\HSTinfo{English Linguistics}{English Linguistics}{Master’s}{February 14th, 2021}
+\HSTgraddir{Prof. Dr. You Know WHO}
+\HSTaddjury{Prof. Dr.}{Prof. Dr.}{Julius CAESAR}
+\HSTaddjury{Prof. Dr.}{Prof. Dr.}{Isaac NEWTON}
+\HSTaddjury{Prof. Dr.}{Prof. Dr.}{Baruch SPINOZA}
+\HSTaddadvisor{Asst. Prof. Dr.}{Dr. Öğr. Üyesi}{Albert EINSTEIN}
+
+\begin{filecontents}{ex.bib}
+@incollection{cheng1996,
+	location = {Dordrecht},
+	title = {Quantifying Dialect Mutual Intelligibility},
+	volume = {36},
+	isbn = {978-0-7923-3868-0},
+	url = {http://www.springerlink.com/index/10.1007/978-94-009-1608-1_9},
+	pages = {269--292},
+	booktitle = {New Horizons in Chinese Linguistics},
+	publisher = {Springer Netherlands},
+	author = {Cheng, Chin-Chuan},
+	editor = {Huang, C.-T. James and Li, Yen-hui Audrey},
+	urldate = {2019-07-30},
+	date = {1996},
+	langid = {english},
+	doi = {10.1007/978-94-009-1608-1_9},
+	file = {Attachments/cheng1996.pdf}
+}
+@collection{mar-molinero2020,
+	location = {Bristol, {UK} ; Blue Ridge Summit, {PA}},
+	title = {Researching language in superdiverse urban contexts: exploring methodological and theoretical concepts},
+	isbn = {978-1-78892-645-4},
+	series = {Researching multilingually},
+	shorttitle = {Researching language in superdiverse urban contexts},
+	number = {5},
+	publisher = {Multilingual Matters},
+	editor = {Mar-Molinero, Clare},
+	date = {2020},
+	keywords = {Research Methodology, Multilingualism, Urban dialects},
+}
+\end{filecontents}
+
+\addbibresource{ex.bib}
+
+\begin{document}
+
+\HSTfrontmatter{%
+  Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi
+  nec facilisis facilisis, est dui fermentum leo, quis tempor ligula
+  erat quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis
+  sed pede.  Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec
+  adipiscing interdum, lacus tellus malesuada massa, quis varius mi
+  purus non odio.  Pellentesque condimentum, magna ut suscipit
+  hendrerit, ipsum augue ornare nulla, non luctus diam neque sit amet
+  urna.  Curabitur vulputate vestibulum lorem.  Fusce sagittis, libero
+  non molestie mollis, magna orci ultrices dolor, at vulputate neque
+  nulla lacinia eros.  Sed id ligula quis est convallis tempor.
+  Curabitur lacinia pulvinar nibh.  Nam a sapien.
+
+  Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat
+  non orci commodo lobortis.  Proin neque massa, cursus ut, gravida
+  ut, lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor
+  tellus.  Nullam tempus.  Mauris ac felis vel velit tristique
+  imperdiet.  Donec at pede.  Etiam vel neque nec dui dignissim
+  bibendum.  Vivamus id enim.  Phasellus neque orci, porta a, aliquet
+  quis, semper a, massa.  Phasellus purus.  Pellentesque tristique
+  imperdiet tortor.  Nam euismod tellus id erat.
+
+  Donec at pede.  Nunc aliquet, augue nec adipiscing interdum, lacus
+  tellus malesuada massa, quis varius mi purus non odio.  Suspendisse
+  potenti.
+}{Example thesis, Thesis in \LaTeX, Hacettepe University}
+
+\HSTpreface
+Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non
+orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut,
+lobortis eget, lacus.  Sed diam.  Praesent fermentum tempor tellus.
+Nullam tempus.  Mauris ac felis vel velit tristique imperdiet.  Donec
+at pede.  Etiam vel neque nec dui dignissim bibendum.  Vivamus id
+enim.  Phasellus neque orci, porta a, aliquet quis, semper a, massa.
+Phasellus purus.  Pellentesque tristique imperdiet tortor.  Nam
+euismod tellus id erat.
+
+Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec
+facilisis facilisis, est dui fermentum leo, quis tempor ligula erat
+quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.
+Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing
+interdum, lacus tellus malesuada massa, quis varius mi purus non odio.
+Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue
+ornare nulla, non luctus diam neque sit amet urna.  Curabitur
+vulputate vestibulum lorem.  Fusce sagittis, libero non molestie
+mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia
+eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia
+pulvinar nibh.  Nam a sapien.
+
+Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec
+facilisis facilisis, est dui fermentum leo, quis tempor ligula erat
+quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.
+Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing
+interdum, lacus tellus malesuada massa, quis varius mi purus non odio.
+Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue
+ornare nulla, non luctus diam neque sit amet urna.  Curabitur
+vulputate vestibulum lorem.  Fusce sagittis, libero non molestie
+mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia
+eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia
+pulvinar nibh.  Nam a sapien.
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec
+hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam
+nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis
+natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non
+turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum
+accumsan nisl.
+
+\HSTmainmatter
+
+\HSTintro
+This is the introduction chapter. Nullam eu ante vel est convallis
+dignissim.  Fusce suscipit, wisi nec facilisis facilisis, est dui
+fermentum leo, quis tempor ligula erat quis odio.  Nunc porta
+vulputate tellus.  Nunc rutrum turpis sed pede.  Sed bibendum.
+Aliquam posuere.  Nunc aliquet, augue nec adipiscing interdum, lacus
+tellus malesuada massa, quis varius mi purus non odio.  Pellentesque
+condimentum, magna ut suscipit hendrerit, ipsum augue ornare nulla,
+non luctus diam neque sit amet urna.  Curabitur vulputate vestibulum
+lorem.  Fusce sagittis, libero non molestie mollis, magna orci
+ultrices dolor, at vulputate neque nulla lacinia eros.  Sed id ligula
+quis est convallis tempor.  Curabitur lacinia pulvinar nibh.  Nam a
+sapien.
+
+Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
+Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam,
+dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam
+laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.
+Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.
+Vestibulum convallis, lorem a tempus semper, dui dui euismod elit,
+vitae placerat urna tortor vitae lacus.  Nullam libero mauris,
+consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt
+felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a
+rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo
+sit amet elit.
+
+Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec
+facilisis facilisis, est dui fermentum leo, quis tempor ligula erat
+quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.
+Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing
+interdum, lacus tellus malesuada massa, quis varius mi purus non odio.
+Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue
+ornare nulla, non luctus diam neque sit amet urna.  Curabitur
+vulputate vestibulum lorem.  Fusce sagittis, libero non molestie
+mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia
+eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia
+pulvinar nibh.  Nam a sapien.
+
+\chapter{First chapter}
+\section{Elaborations}
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec
+hendrerit tempor tellus \autocite{cheng1996}.  Donec pretium
+posuere tellus.  Proin quam nisl, tincidunt et, mattis eget, convallis
+nec, purus.  Cum sociis natoque penatibus et magnis dis parturient
+montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.
+Nullam tristique diam non turpis.  Cras placerat accumsan nulla.
+Nullam rutrum.  Nam vestibulum accumsan nisl.\footnote{This is a
+  footnote. Adding a lot of text to demonstrate that it uses single
+  spacing, unlike the body text, which should be using one-half
+  spacing.}
+
+\begin{quote}
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec
+  hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam
+  nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis
+  natoque penatibus \autocite{mar-molinero2020} et magnis dis parturient
+  montes, nascetur ridiculus mus.  Nulla posuere.  Donec vitae dolor.
+  Nullam tristique diam non turpis.  Cras placerat accumsan nulla.
+  Nullam rutrum.  Nam vestibulum accumsan nisl.
+\end{quote}
+
+Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
+Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam,
+dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam
+laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.
+Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.
+
+\subsection{A subsection, a trial, and an inspector}
+
+Vestibulum convallis, lorem a tempus semper, dui dui euismod elit,
+vitae placerat urna tortor vitae lacus.  Nullam libero mauris,
+consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt
+felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a
+rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo
+sit amet elit.
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec
+hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam
+nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis
+natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non
+turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum
+accumsan nisl.
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec
+hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam
+nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis
+natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non
+turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum
+accumsan nisl.
+
+\subsubsection{A subsubsection of the usual sorts}
+
+Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
+Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam,
+dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam
+laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.
+Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.
+Vestibulum convallis, lorem a tempus semper, dui dui euismod elit,
+vitae placerat urna tortor vitae lacus.  Nullam libero mauris,
+consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt
+felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a
+rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo
+sit amet elit.
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec
+hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam
+nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis
+natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non
+turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum
+accumsan nisl.
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.  Donec
+hendrerit tempor tellus.  Donec pretium posuere tellus.  Proin quam
+nisl, tincidunt et, mattis eget, convallis nec, purus.  Cum sociis
+natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+mus.  Nulla posuere.  Donec vitae dolor.  Nullam tristique diam non
+turpis.  Cras placerat accumsan nulla.  Nullam rutrum.  Nam vestibulum
+accumsan nisl.
+
+Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.
+Etiam vel tortor sodales tellus ultricies commodo.  Suspendisse
+potenti.  Aenean in sem ac leo mollis blandit.  Donec neque quam,
+dignissim in, mollis nec, sagittis eu, wisi.  Phasellus lacus.  Etiam
+laoreet quam sed arcu.  Phasellus at dui in ligula mollis ultricies.
+Integer placerat tristique nisl.  Praesent augue.  Fusce commodo.
+Vestibulum convallis, lorem a tempus semper, dui dui euismod elit,
+vitae placerat urna tortor vitae lacus.  Nullam libero mauris,
+consequat quis, varius et, dictum id, arcu.  Mauris mollis tincidunt
+felis.  Aliquam feugiat tellus ut neque.  Nulla facilisis, risus a
+rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo
+sit amet elit.
+
+\HSTconcl
+
+Nullam eu ante vel est convallis dignissim.  Fusce suscipit, wisi nec
+facilisis facilisis, est dui fermentum leo, quis tempor ligula erat
+quis odio.  Nunc porta vulputate tellus.  Nunc rutrum turpis sed pede.
+Sed bibendum.  Aliquam posuere.  Nunc aliquet, augue nec adipiscing
+interdum, lacus tellus malesuada massa, quis varius mi purus non odio.
+Pellentesque condimentum, magna ut suscipit hendrerit, ipsum augue
+ornare nulla, non luctus diam neque sit amet urna.  Curabitur
+vulputate vestibulum lorem.  Fusce sagittis, libero non molestie
+mollis, magna orci ultrices dolor, at vulputate neque nulla lacinia
+eros.  Sed id ligula quis est convallis tempor.  Curabitur lacinia
+pulvinar nibh.  Nam a sapien.
+
+\HSTbib
+
+\end{document}

@@ -171,14 +171,23 @@
     \vfill
     Ankara, \thedate
   \end{center}
+}
+
+% args: phantom chapter title
+%
+% do not use for content chapters, this is a helper for front matter
+% and end matter.
+\newcommand\HSTphantomchapter[1]{%
   \newpage
+  \phantomsection
+  \begin{center}
+    {\bfseries\large #1}
+  \end{center}
+  \addcontentsline{toc}{chapter}{#1}
 }
 
 \newcommand\HSTaccept{%
-  \begin{center}
-    {\bfseries\large ACCEPTANCE AND APPROVAL}
-  \end{center}
-  \addcontentsline{toc}{chapter}{ACCEPTANCE AND APPROVAL}
+  \HSTphantomchapter{ACCEPTANCE AND APPROVAL}
 
   The jury finds that \theauthor\ has on the date of
   \HSTdefdate\ successfully passed the defense examination and
@@ -208,15 +217,11 @@
     \HSTgraddirector\\
     Graduate School Director
   \end{center}
-  \newpage
 }
 
 \newcommand\HSTyay{%
   \singlespacing
-  \begin{center}
-    {\large\bf YAYIMLAMA VE FİKRİ MÜLKİYET HAKLARI BEYANI}
-    \addcontentsline{toc}{chapter}{YAYIMLAMA VE FİKRİ MÜLKİYET HAKLARI BEYANI}
-  \end{center}
+  \HSTphantomchapter{YAYIMLAMA VE FİKRİ MÜLKİYET HAKLARI BEYANI}
 
   Enstitü tarafından onaylanan lisansüstü tezimin/raporumun tamamını
   veya herhangi bir kısmını, basılı (kağıt) ve elektronik formatta
@@ -308,14 +313,11 @@
     \end{adjustwidth}
   }
   \onehalfspacing
-  \newpage
 }
 
 \newcommand\HSTetik{%
-  \begin{center}
-    {\large\bf ETİK BEYAN}
-    \addcontentsline{toc}{chapter}{ETİK BEYAN}
-  \end{center}
+  \HSTphantomchapter{ETİK BEYAN}
+
   Bu çalışmadaki bütün bilgi ve belgeleri akademik kurallar
   çerçevesinde elde ettiğimi, görsel, işitsel ve yazılı tüm bilgi ve
   sonuçları bilimsel ahlak kurallarına uygun olarak sunduğumu,
@@ -331,7 +333,6 @@
   \hspace*{\fill}{[İmza]}
 
   \hspace*{\fill}{\bf \theauthor}
-  \newpage
 }
 
 % args: name, surname (will be capitalised}
@@ -343,10 +344,7 @@
 
 % args: abstract in English, keywords
 \newcommand\HSTabstract[2]{%
-  \begin{center}
-    {\large\bf ABSTRACT}
-    \addcontentsline{toc}{chapter}{ABSTRACT}
-  \end{center}
+  \HSTphantomchapter{ABSTRACT}
 
   \HSTauthorlastname, \HSTauthorfirstname. {\it \thetitle}, \HSTtype\
   Thesis, Ankara, \thedate.
@@ -359,66 +357,40 @@
 }
 
 \newcommand\HSTtoc{%
-  \addcontentsline{toc}{chapter}{CONTENTS}
+  \HSTphantomchapter{CONTENTS}
   \singlespacing
+  \renewcommand{\contentsname}{}
+  \patchcmd{\tableofcontents}{\chapter*}{}{}{}
   \tableofcontents
   \onehalfspacing
 }
 
 \newcommand\HSTabbrevs{%
-  \newpage
-  \begin{center}
-    {\large\bf ABBREVIATIONS}
-    \addcontentsline{toc}{chapter}{ABBREVIATIONS}
-  \end{center}
+  \HSTphantomchapter{ABBREVIATIONS}
 }
 \newcommand\HSTtables{%
-  \newpage
-  \begin{center}
-    {\large\bf TABLES}
-    \addcontentsline{toc}{chapter}{TABLES}
-  \end{center}
+  \HSTphantomchapter{TABLES}
 }
 \newcommand\HSTfigs{%
-  \newpage
-  \begin{center}
-    {\large\bf FIGURES}
-    \addcontentsline{toc}{chapter}{FIGURES}
-  \end{center}
+  \HSTphantomchapter{FIGURES}
 }
 
 \newcommand\HSTpreface{
-  \newpage
-  \begin{center}
-    {\large\bf PREFACE}
-    \addcontentsline{toc}{chapter}{PREFACE}
-  \end{center}
+  \HSTphantomchapter{PREFACE}
 }
 
 \newcommand\HSTintro{
-  \newpage
-  \begin{center}
-    {\large\bf INTRODUCTION}
-    \addcontentsline{toc}{chapter}{INTRODUCTION}
-  \end{center}
+  \HSTphantomchapter{INTRODUCTION}
 }
 
 \newcommand\HSTconcl{
-  \newpage
-  \begin{center}
-    {\large\bf CONCLUSION}
-    \addcontentsline{toc}{chapter}{CONCLUSION}
-  \end{center}
+  \HSTphantomchapter{CONCLUSION}
 }
 
 
 \newcommand\HSTbib{%
-  \newpage
   \singlespacing
-  \begin{center}
-    {\large\bf BIBLIOGRAPHY}
-    \addcontentsline{toc}{chapter}{BIBLIOGRAPHY}
-  \end{center}
+  \HSTphantomchapter{BIBLIOGRAPHY}
   \defbibheading{bibliography}{} %% override
   \printbibliography
   \onehalfspacing

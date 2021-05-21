@@ -10,8 +10,6 @@ compatible as possible with the guide.
 
 WIP. Documentation will appear.
 
-Currently page links are mostly broken.
-
 Table of contents needs working on.
 
 Convert loops using LuaLaTeX features?

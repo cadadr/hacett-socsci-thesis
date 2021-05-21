@@ -1,7 +1,7 @@
 # Makefile
 
 example.pdf: example.tex hacett-socsci-thesis.cls
-	latexmk -f -silent -bibtex-cond -xelatex $<
+	latexmk -f -silent -bibtex-cond -lualatex $<
 
 clean:
 	rm *.aux *.fls *.log *.xdv *.fdb_latexmk \

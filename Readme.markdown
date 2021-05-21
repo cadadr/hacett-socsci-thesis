@@ -14,6 +14,8 @@ Currently page links are mostly broken.
 
 Table of contents needs working on.
 
+Convert loops using LuaLaTeX features?
+
 ## Usage
 
 For a working example, see [example.tex](./example.tex), you can run

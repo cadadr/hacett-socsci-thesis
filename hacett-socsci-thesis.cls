@@ -40,12 +40,20 @@
 \RequirePackage{graphicx}
 \RequirePackage{hyperref}
 \RequirePackage[utf8]{inputenc}
-\RequirePackage{mfirstuc}
 \RequirePackage{pgffor}
 \RequirePackage{setspace}
 \RequirePackage[explicit]{titlesec}
 \RequirePackage{titling}
+\RequirePackage{titlecaps}
 
+%%% Preamble:
+
+%% do not capitalise these in headings
+%% List based on: https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+\Addlcwords{%
+  and an as at a but by for if in nor off of on or per so%
+  the to up via with yet%
+}
 
 %%% Definitions:
 
@@ -438,12 +446,12 @@
 \titlespacing*{\section}{1cm}{2em}{1.5em}{}
 
 \titleformat{\subsection}[block]
-  {\bfseries}{\thesubsection\ \capitalisewords{#1}}
+  {\bfseries}{\thesubsection\ \titlecap{#1}}
   {1.5em}{}
 \titlespacing*{\subsection}{1cm}{2em}{1.5em}{}
 
 \titleformat{\subsubsection}[block]
-  {}{\thesubsubsection\ \capitalisewords{#1}}
+  {}{\thesubsubsection\ \titlecap{#1}}
   {1.5em}{}
 \titlespacing*{\subsubsection}{0cm}{2em}{1.5em}{}
 
@@ -451,19 +459,6 @@
 
 \geometry{a4paper,left=4cm,right=2cm,top=3cm,bottom=3cm}
 \pagestyle{main}
-
-%% do not capitalise these in headings
-\MFUnocap{the}
-\MFUnocap{and}
-\MFUnocap{a}
-\MFUnocap{an}
-\MFUnocap{to}
-\MFUnocap{for}
-\MFUnocap{with}
-% \MFUnocap{which}
-% \MFUnocap{where}
-% \MFUnocap{when}
-\MFUnocap{of}
 
 \setromanfont{TeX Gyre Termes}
 \setsansfont{TeX Gyre Heros}

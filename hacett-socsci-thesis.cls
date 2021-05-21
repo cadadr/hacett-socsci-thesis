@@ -138,7 +138,7 @@
   \thispagestyle{empty}
   \setcounter{page}{0}
   \begin{center}
-    \includegraphics{geyik.png}\\
+    \includegraphics[width=1cm]{geyik.png}\\
     Hacettepe University Graduate School Of Social Sciences\\
     Department of \HSTdept\\
     \HSTprog\ Programme

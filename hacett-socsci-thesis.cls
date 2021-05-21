@@ -40,6 +40,7 @@
 \RequirePackage{graphicx}
 \RequirePackage{hyperref}
 \RequirePackage[utf8]{inputenc}
+\RequirePackage{microtype}
 \RequirePackage{pgffor}
 \RequirePackage{setspace}
 \RequirePackage[explicit]{titlesec}

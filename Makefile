@@ -8,4 +8,7 @@ clean:
 		*.bbl *.bcf *.blg *.run.xml *.toc *.bib \
 		*.out
 
-.PHONY: clean
+clean-all: clean
+	rm -f example.pdf
+
+.PHONY: clean clean-all

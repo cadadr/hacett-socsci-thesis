@@ -1,3 +1,7 @@
+# NOTE
+
+I will archive this repository for a few months, until after my thesis is published. At which point the repository will get unarchived with a complete latex class.
+
 # Hacettepe Social Sciences Thesis Class
 
 This is a LaTeX class for writing English theses for the Grad School
